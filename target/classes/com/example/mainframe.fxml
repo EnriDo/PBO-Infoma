@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.MainFrame">
+   <children>
+      <HBox layoutX="20.0" layoutY="20.0">
+         <children>
+            <Text text="INFOMA" style="-fx-font-size: 32px;" />
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="60.0" spacing="10.0">
+         <children>
+            <Label text="Kategori:" />
+            <TextField fx:id="kategoriField" prefWidth="150" />
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="100.0" spacing="10.0">
+         <children>
+            <Label text="Nama Tempat:" />
+            <TextField fx:id="namaTempatField" prefWidth="150" />
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="140.0" spacing="10.0">
+         <children>
+            <Label text="Deskripsi:" />
+            <TextField fx:id="deskripsiField" prefWidth="150" />
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="180.0" spacing="10.0">
+         <children>
+            <Label text="Alamat Tempat:" />
+            <TextField fx:id="alamatField" prefWidth="150" />
+         </children>
+      </HBox>
+      <HBox layoutX="300.0" layoutY="60.0" spacing="10.0">
+         <children>
+            <Label text="Harga:" />
+            <TextField fx:id="hargaField" prefWidth="150" />
+         </children>
+      </HBox>
+      <HBox layoutX="300.0" layoutY="100.0" spacing="10.0">
+         <children>
+            <Label text="Fasilitas:" />
+            <TextField fx:id="fasilitasField" prefWidth="150" />
+         </children>
+      </HBox>
+      <HBox layoutX="300.0" layoutY="140.0" spacing="10.0">
+         <children>
+            <Label text="Jam Operasional:" />
+            <TextField fx:id="jamOperasionalField" prefWidth="150" />
+         </children>
+      </HBox>
+      <HBox layoutX="300.0" layoutY="180.0" spacing="10.0">
+         <children>
+            <Label text="Kontak:" />
+            <TextField fx:id="kontakField" prefWidth="150" />
+         </children>
+      </HBox>
+      <HBox layoutX="20.0" layoutY="220.0" spacing="10.0">
+         <children>
+            <Button text="Add" fx:id="addButton" />
+            <Button text="Delete" fx:id="deleteButton" />
+            <Button text="Update" fx:id="updateButton" />
+            <Button text="New" fx:id="newButton" />
+         </children>
+      </HBox>
+      <TableView fx:id="tableView" layoutX="20.0" layoutY="260.0" prefWidth="650.0" prefHeight="200.0">
+         <columns>
+            <TableColumn text="Kategori" />
+            <TableColumn text="Nama Tempat" />
+            <TableColumn text="Deskripsi" />
+            <TableColumn text="Alamat Tempat" />
+            <TableColumn text="Harga" />
+            <TableColumn text="Fasilitas" />
+            <TableColumn text="Jam Operasional" />
+            <TableColumn text="Kontak" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
