@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import elemen-elemen JavaFX -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Root layout menggunakan VBox untuk menyusun elemen secara vertikal -->
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.facility.SecondaryController" spacing="10" alignment="CENTER">
+
+    <!-- HBox untuk kategori, menyusun elemen secara horizontal -->
+    <HBox spacing="10">
+        <!-- ComboBox untuk memilih kategori -->
+        <ComboBox fx:id="kategoriComboBox" promptText="Kategori" HBox.hgrow="ALWAYS"/> <!-- Membuat ComboBox meluas sesuai ruang -->
+    </HBox>
+
+    <!-- TextField untuk nama tempat -->
+    <TextField fx:id="namaTempatField" promptText="Nama Tempat" />
+
+    <!-- TextField untuk deskripsi tempat -->
+    <TextField fx:id="deskripsiField" promptText="Deskripsi" />
+
+    <!-- TextField untuk alamat tempat -->
+    <TextField fx:id="alamatField" promptText="Alamat" />
+
+    <!-- TextField untuk harga -->
+    <TextField fx:id="hargaField" promptText="Harga" />
+
+    <!-- TextField untuk fasilitas yang disediakan -->
+    <TextField fx:id="fasilitasField" promptText="Fasilitas" />
+
+    <!-- TextField untuk jam operasional tempat -->
+    <TextField fx:id="jamOperasionalField" promptText="Jam Operasional" />
+
+    <!-- TextField untuk kontak yang bisa dihubungi -->
+    <TextField fx:id="kontakField" promptText="Kontak" />
+
+    <!-- Tombol untuk menyimpan data -->
+    <Button text="Save" onAction="#handleSave" />
+
+    <!-- Tombol untuk kembali ke halaman utama -->
+    <Button text="Back" onAction="#switchToPrimary" />
+
+</VBox>

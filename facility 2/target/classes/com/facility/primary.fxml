@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import elemen-elemen JavaFX -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.Scene?>
+
+<!-- Root layout menggunakan BorderPane untuk membagi area menjadi top, bottom, left, right, dan center -->
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.facility.PrimaryController">
+    
+    <!-- Area tengah (center) untuk menampilkan tabel fasilitas -->
+    <center>
+        <!-- TableView untuk menampilkan data fasilitas -->
+        <TableView fx:id="tableView">
+            <columns>
+                <!-- Kolom tabel untuk setiap atribut Fasilitas -->
+                <TableColumn fx:id="kategoriColumn" text="Kategori" />
+                <TableColumn fx:id="namaTempatColumn" text="Nama Tempat" />
+                <TableColumn fx:id="deskripsiColumn" text="Deskripsi" />
+                <TableColumn fx:id="alamatColumn" text="Alamat" />
+                <TableColumn fx:id="hargaColumn" text="Harga" />
+                <TableColumn fx:id="fasilitasColumn" text="Fasilitas" />
+                <TableColumn fx:id="jamOperasionalColumn" text="Jam Operasional" />
+                <TableColumn fx:id="kontakColumn" text="Kontak" />
+            </columns>
+        </TableView>
+    </center>
+    
+    <!-- Area bawah (bottom) untuk tombol-tombol aksi -->
+    <bottom>
+        <!-- HBox untuk menyusun tombol-tombol secara horizontal -->
+        <HBox spacing="10" alignment="CENTER"> <!-- Center alignment for buttons -->
+            <!-- Tombol untuk menambah fasilitas baru -->
+            <Button text="Add Facility" onAction="#switchToSecondary"/>
+            <!-- Tombol untuk mengedit fasilitas yang dipilih -->
+            <Button text="Edit Facility" onAction="#handleEdit"/>
+            <!-- Tombol untuk menghapus fasilitas yang dipilih -->
+            <Button text="Delete Facility" onAction="#handleDelete"/>
+        </HBox>
+    </bottom>
+</BorderPane>
