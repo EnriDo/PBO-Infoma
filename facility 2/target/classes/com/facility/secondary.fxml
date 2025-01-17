@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Import elemen-elemen JavaFX yang dibutuhkan -->
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!-- Root layout menggunakan VBox untuk susunan vertikal -->
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="com.facility.SecondaryController" spacing="10" alignment="CENTER">
+    <!-- ComboBox untuk memilih kategori fasilitas -->
+    <ComboBox fx:id="kategoriComboBox" promptText="Kategori" /> <!-- Changed to ComboBox -->
+    
+    <!-- TextField untuk input nama tempat -->
+    <TextField fx:id="namaTempatField" promptText="Nama Tempat" />
+    
+    <!-- TextField untuk input deskripsi fasilitas -->
+    <TextField fx:id="deskripsiField" promptText="Deskripsi" />
+    
+    <!-- TextField untuk input alamat fasilitas -->
+    <TextField fx:id="alamatField" promptText="Alamat" />
+    
+    <!-- TextField untuk input harga fasilitas -->
+    <TextField fx:id="hargaField" promptText="Harga" />
+    
+    <!-- TextField untuk input fasilitas tambahan -->
+    <TextField fx:id="fasilitasField" promptText="Fasilitas" />
+    
+    <!-- TextField untuk input jam operasional fasilitas -->
+    <TextField fx:id="jamOperasionalField" promptText="Jam Operasional" />
+    
+    <!-- TextField untuk input nomor kontak fasilitas -->
+    <TextField fx:id="kontakField" promptText="Kontak" />
+    
+    <!-- HBox untuk menampung tombol-tombol dengan jarak antar tombol -->
+    <HBox spacing="10" alignment="CENTER" VBox.vgrow="ALWAYS">
+        <!-- Tombol untuk menyimpan fasilitas yang baru ditambahkan -->
+        <Button text="Save" onAction="#handleSave" />
+        
+        <!-- Tombol untuk kembali ke tampilan utama (primary) -->
+        <Button text="Back" onAction="#switchToPrimary" />
+    </HBox>
+</VBox>
